@@ -1,0 +1,147 @@
+
+/* .containerMain  {
+width: 100%;
+height: 500px;
+background-color: black;
+margin-top:50px;
+
+box-sizing: border-box;
+position: absolute;
+
+} */
+
+.container-fluid{
+  background-color: black;
+  height: auto;
+  margin-top:0px;
+  font-family: 'Montserrat';
+}
+
+ .main{
+width:100%;
+height: auto;
+/* padding-right: 20%;
+padding-left: 20%;*/
+padding-top:50px;
+} 
+ 
+h2{
+    color: white;
+    text-align: center;
+    margin-top: 25px;
+} 
+
+
+.progressBar{
+
+width: 100%;
+border-radius: 10px ;
+
+background-color: #333;
+position: relative;
+
+} 
+
+.progressing{
+width: 0%;
+height: 25px;
+border-radius: 10px ;
+margin-top: 30px;
+margin-bottom: 20px;
+background-color: green;
+position: relative;
+
+}
+
+.skill{
+    width:12%; 
+    position: fixed;
+    text-align: center;
+    padding-top: auto: ;
+    padding-left: 20px;
+    padding-right: 25px;
+    color: black;
+    font-size:20px;
+    background-color: red;
+    border-radius: 10px 0px 0px 10px;
+    height:25px;
+    
+
+} 
+.level{
+    
+    position: relative;
+    
+    padding-top: auto;
+    padding-left: 20px;
+    padding-right: 30px ;
+    float:right;
+    color: black;
+    font-size:20px;
+    background-color: red;
+    border-radius: 0px 10px 10px 0px;
+    height:25px;
+    
+}
+
+
+@media (max-width: 768px) {
+
+h2{
+    font-size: 1.75rem;
+    }
+    .skill{
+    padding-left: 10px;
+    font-size:15px;
+    }    
+.level{
+    font-size:15px;
+    padding-top: 5px;
+
+}
+}
+@media (max-width: 576px) {
+h2{
+font-size: 1.75rem;
+}
+.skill{
+padding-left: 9px;
+font-size:12px;
+padding-top: 6px;
+height:22px;
+}
+.level{
+    width:12%;
+    font-size:12px;
+    padding-top: 4px;
+    height:22px;
+}
+.progressing{
+
+    height:22px;
+}
+
+}
+@media (max-width: 360px) {
+h2{
+font-size: 1.75rem;
+}
+.skill{
+padding-left: 9px;
+font-size:11px;
+padding-top: 6px;
+height:17px;
+}
+.level{
+    width:12%;
+    font-size:12px;
+    padding-top: 4px;
+    padding-left: 7px;
+    height:17px;
+}
+.progressing{
+
+    height:17px;
+}
+
+}
