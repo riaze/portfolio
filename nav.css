@@ -194,9 +194,9 @@ width:70%;
 }
 
 .blockquote{
-font-size: 0.4em;
+font-size: 1;
 width:80%;
-height:150px;
+height:130px;
 
 }
 }
@@ -221,6 +221,34 @@ width:100%;
 .blockquote{
 font-size: 0.8em;
 width:80%;
+height:120px;
+margin-bottom: 50px;
+margin-right: 25px;
+right: 10px;
+
+}
+}
+@media (max-width: 411px) {
+.header
+{
+margin-top: 90px;
+
+}
+
+.header h1{
+font-size: 30px;
+left: 50%;
+}
+
+.header h6
+{
+ padding-left: 31px; 
+width:100%;
+}
+
+.blockquote{
+font-size: 0.9em;
+width:85%;
 height:120px;
 margin-bottom: 50px;
 margin-right: 25px;
