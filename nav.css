@@ -20,7 +20,8 @@ font-size: 45px;
 z-index: 15;
 top: 35%;
 left: 38%;
-margin: -100px 0 0 -150px;   
+margin: -100px 0 0 -150px; 
+font-weight: bold;  
 } 
 .header h6{
  display: inline-block; 
@@ -79,6 +80,8 @@ position:absolute;
 
 #mainNav .navbar-brand {
   color: #fff;
+  font-weight: bold;
+  font-size: 25px;
 }
 
 #mainNav .navbar-nav {
@@ -90,6 +93,8 @@ position:absolute;
 
 #mainNav .navbar-nav li.nav-item a.nav-link {
   color: #fff;
+  font-size: bold;
+  font-size: 18px;
 }
 
 #mainNav .navbar-nav li.nav-item a.nav-link:hover {
