@@ -66,14 +66,22 @@ if(screen.width<=360){
     a[i].style.paddingTop="0px";
     a[7].style.paddingRight="10px";
     
+}	
 }
 
-	
-
+let tel=document.getElementById("tel");
+tel.onclick=function(){
+	tel.style.transition = "0.5s"; 
+  	tel.style.transform = "rotateX(360deg)"; 
+  	tel.innerHTML = "06.95.42.93.94";
 }
 
-
-
-  
-
-
+let email=document.getElementById("email");
+email.onclick=function(){
+	document.createElement ("br");
+	email.style.marginTop = "15px";
+	email.style.transition = "0.5s"; 
+  	email.style.transform = "rotateX(360deg)"; 
+  	email.innerHTML = "ria.thas20@gmail.com";
+ 
+}

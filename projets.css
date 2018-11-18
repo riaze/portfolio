@@ -9,7 +9,7 @@ hr.star-dark {
   margin-bottom: 2.5rem;
   margin-left: auto;
   margin-right: auto;
-}
+} 
 
 hr.star-light:after,
 hr.star-dark:after {
@@ -21,14 +21,14 @@ hr.star-dark:after {
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
   font-size: 2em;
-}
+} 
 
 hr.star-light {
   border-color: #fff;
 }
 
 hr.star-light:after {
-  color: #fff;
+  color: #fff0;
   background-color: #18BC9C;
 }
 
@@ -39,17 +39,15 @@ hr.star-dark {
 hr.star-dark:after {
   color: #2C3E50;
   background-color: white;
-}
+} 
 
-section {
-  padding: 3rem 0;
-}
+
 
 section h2 {
   font-size: 2.25rem;
   line-height: 2rem;
-  font-weight: 700;
-    font-family: Montserrat;
+  font-weight: 500;
+  font-family: Montserrat;
 }
 .text-secondary {
   color: #2C3E50 !important;
