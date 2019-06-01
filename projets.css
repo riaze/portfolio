@@ -40,8 +40,17 @@ hr.star-dark:after {
   color: #2C3E50;
   background-color: white;
 } 
-
-
+.proj-details{
+  text-align: justify;
+   initial-letter: 2;
+}
+.proj-details::first-letter{
+  font-size:30px; 
+}
+.jobday{
+  font-size:35px; 
+  initial-letter: 3.0 2;
+}
 
 section h2 {
   font-size: 2.25rem;
@@ -56,6 +65,9 @@ section h2 {
 .projects{
   margin-right:30%;
   background-color:red;
+}
+.jobday ::first-letter{
+  initial-letter: 2;
 }
 @media (min-width: 992px) {
   section h2 {

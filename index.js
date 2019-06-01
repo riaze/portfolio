@@ -68,20 +68,69 @@ if(screen.width<=360){
     
 }	
 }
+var a = window.matchMedia("(min-width: 768px) and (max-width: 992px)");	
+/*let tel=document.getElementById("tel");*/
+document.getElementById('tel').addEventListener('click', function() {
+	
+	if(tel.innerHTML == "Tel.Mob"){
+		if (a.matches){
+			email.style.marginTop = "15px";
+		}
+		tel.style.transition = "0.5s"; 
+		tel.style.transform = "rotateX(360deg)"; 
+		tel.innerHTML = "06.95.42.93.94";
+		
 
-let tel=document.getElementById("tel");
-tel.onclick=function(){
-	tel.style.transition = "0.5s"; 
-  	tel.style.transform = "rotateX(360deg)"; 
-  	tel.innerHTML = "06.95.42.93.94";
-}
+	}
+	else if(tel.innerHTML == "06.95.42.93.94"){
+		tel.style.transition = "0.5s"; 
+		tel.style.transform = "rotateX(-360deg)"; 
+		tel.innerHTML = "Tel.Mob";	
+	}	
+});
 
-let email=document.getElementById("email");
-email.onclick=function(){
-	document.createElement ("br");
-	email.style.marginTop = "15px";
+/*tel.onclick=function(){
+	if(tel.innerHTML == "Tel.Mob"){
+		tel.style.transition = "0.5s"; 
+		tel.style.transform = "rotateX(360deg)"; 
+		tel.innerHTML = "06.95.42.93.94";
+	}
+	else if(tel.innerHTML == "06.95.42.93.94"){
+		tel.style.transition = "0.5s"; 
+		tel.style.transform = "rotateX(-360deg)"; 
+		tel.innerHTML = "Tel.Mob";
+	}
+} */
+
+document.getElementById('email').addEventListener('click', function() { 
+	var x = window.matchMedia("(min-width: 768px)");
+	if(email.innerHTML == "Email"){
+	
+		if (x.matches){
+		document.createElement ("br");
+		email.style.marginTop = "15px";
+		}
+		email.style.transition = "0.5s"; 
+		email.style.transform = "rotateX(360deg)"; 
+		email.innerHTML = "ria.thas20@gmail.com";	
+		}
+	else if(email.innerHTML == "ria.thas20@gmail.com")
+	{
+	if (a.matches){
+		if(tel.innerHTML == "Tel.Mob"){
+		document.createElement ("br");
+		email.style.marginTop = "0px";
+		}
+		else
+		{
+		email.style.marginTop = "15px";
+		}
+		}
+	else{
+		email.style.marginTop = "0px";
+	}		
 	email.style.transition = "0.5s"; 
-  	email.style.transform = "rotateX(360deg)"; 
-  	email.innerHTML = "ria.thas20@gmail.com";
- 
-}
+	email.style.transform = "rotateX(-360deg)"; 
+	email.innerHTML = "Email";
+	}
+});
